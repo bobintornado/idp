@@ -1,4 +1,4 @@
-<template name="SearchBox">
+<template name="searchBox">
     <div id="searchbox">
         <span id="searchText">Search Here!!</span>
         <form>
@@ -14,15 +14,25 @@
 
         <form class="form-horizontal">
             <div class="form-group">
-                <label for="distanceInput" class="col-sm-2 control-label">Within</label>
-                <div class="col-sm-8">
+                <label for="distanceInput" class="col-sm-3 control-label">Within</label>
+                <div class="col-sm-7">
                     <input type="text" class="form-control" id="distanceInput" placeholder="2">
                 </div>
                 <label class="col-sm-2 control-label">KM</label>
             </div>
-            
+            <!-- Implement a slider there if I got the mood -->
+            <!-- <div class="form-group">
+                <div class="boundary"></div>
+                <div class="boundary"></div>
+            </div> -->
+             <div class="form-group">
+                <label for="priceCapInput" class="col-sm-3 control-label">Price Cap</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="priceCapInput" placeholder="1000">
+                </div>
+                <label class="col-sm-2 control-label">SGD</label>
+            </div>
 
-            
 
         </form>
 

@@ -1,0 +1,19 @@
+<template name="slider">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            {{#each photos}}
+            <div class="swiper-slide">
+                <img src="{{link}}">
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</template>

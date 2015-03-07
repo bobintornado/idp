@@ -1,12 +1,97 @@
+/* About Landing Page */
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+@font-face {
+    font-family: BrannbollSmal;
+    src: url("/fonts/BrannbollSmal.ttf");
+}
+@font-face {
+    font-family: JennaSue;
+    src: url("/fonts/JennaSue.ttf");
+}
+#landing_login {
+	position: absolute;
+	top: 2%;
+	right: 1%;
+	background:none;
+    box-shadow:none;
+    color: #FFFFFF;	
+}
+#langdinglogo {
+    position: absolute;
+    top: 20%;
+    width: 56%;
+    left: 22%;
+}
+#slogn {
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 30;
+    font-family: JennaSue;
+    font-size: 4em;
+    top: 62%;
+    /*left: 35%;*/
+    
+    text-align: center;
+}
+#start {
+    position: absolute;
+    top: 74%;
+    text-align: center;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    background-color: #4BC970;
+    font-size: xx-large;
+}
+#start:hover {
+    background-color: #228B22;
+}
+/* About Search Page */
+
+#logo-con {
+    background-color: #FFFF00;
+    height: 100%;
+    width: 100%;
+}
+#logo {
+    width: 30%;
+    height: 100%;
+    /*position: absolute;*/
+    
+    right: 30%;
+}
+/* About Search Page*/
+
 #searchbox {
-	margin: 0px 8px 8px 8px;
-	padding: 8px;
+    margin: 0px 8px 8px 8px;
+    padding: 8px;
 }
-
 #searchText {
-	font-size: 40px;
+    font-size: 40px;
 }
-
-#test::before  {
-	content: '\f1af';
+.boundary {
+    background-color: '';
+    width: 5px;
+    height: 20px;
+    display: inline-block;
+}
+.card {
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px #aaa;
+    background: white;
+    margin: 0 1rem 1rem;
+    border-radius: 3px;
+}
+.swiper-container {
+    width: 100%;
+    height: 600px;
 }

@@ -1,4 +1,6 @@
 <template name="layout">
-	{{> nav}}
+	{{#if is_langing_page}}
+		{{> nav}}
+	{{/if}}
 	{{> yield}}
 </template>

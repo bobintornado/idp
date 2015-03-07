@@ -1,0 +1,10 @@
+<template name="results">
+	<div class="results_header">
+		<h3>We think you may interested into following rooms:</h3>	
+	</div>
+	<div id="results">
+		{{#each results}}
+			{{> result}}
+		{{/each}}
+	</div>
+</template>

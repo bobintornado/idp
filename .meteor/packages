@@ -9,3 +9,7 @@ autopublish
 insecure
 twbs:bootstrap
 iron:router
+react
+accounts-base
+accounts-ui
+swiper:swiper
