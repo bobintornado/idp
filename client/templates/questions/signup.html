@@ -1,4 +1,4 @@
-<template name="landingPage">
+<template name="signup">
     <style type="text/css">
     html {
         background: url(/bkg.png) no-repeat center center fixed;
@@ -9,13 +9,18 @@
     }
     </style>
 
-    <img src="/ppp.png" id="langdinglogo" />
-    <button type="button" class="btn btn-default" id="landing_login">Login</button>
+    <img src="/landingLogo.png" id="langdinglogo" />
     <div id="slogn">
         <p>
             Personalize your roommate discovery^
         </p>
     </div>
-    <button type="button" id="start" class="btn btn-success col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">START DISCOVERY</button>
 
+    <div id="modal-2" class="modal" tabindex="-1" role="dialog" style="display: block">
+        <div class="modal-dialog open">
+            <div class="modal-content">
+                {{> atForm state='signUp'}}
+            </div>
+        </div>
+    </div>
 </template>

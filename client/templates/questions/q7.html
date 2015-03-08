@@ -1,0 +1,18 @@
+<template name="question7">
+    <div class="modal-header">
+        <h4 class="modal-title">Gender</h4>
+    </div>
+
+    <div class="modal-body">
+        <div class="row btn-group-justified choices_row" role="group">
+            {{#each questions}}
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 choice">
+                <div>
+                    <img src="{{src}}" id="{{name}}" class="choice_img btn btn-choice">    
+                </div>
+                <p> {{name}} </p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

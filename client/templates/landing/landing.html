@@ -1,0 +1,38 @@
+<template name="landingPage">
+    <style type="text/css">
+    html {
+        background: url(/bkg.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    </style>
+
+    <img src="/landingLogo.png" id="langdinglogo" />
+    <!-- <button type="button" class="btn btn-default" id="landing_login"> {{> loginButtons}}</button> -->
+    
+    <!-- Anyhow do login first -->
+    <ul class="nav navbar-nav navbar-right" id="landing_login">
+        {{> loginButtons}}
+    </ul>
+    
+    <div id="slogn">
+        <p>
+            Personalize your roommate discovery^
+        </p>
+    </div>
+    <button type="button" id="start" data-toggle="modal" data-target="#know_more_about_you" class="btn btn-success col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">START DISCOVERY</button>
+
+    <!-- Manual center -->
+    <!-- col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 -->
+
+    <!-- Modal -->
+    <div class="modal fade modal-open" id="know_more_about_you" tabindex="-1" role="dialog" aria-labelledby="know_more_about_youLabel" aria-hidden="true">
+        <div class="modal-dialog" style="{{#if isSignup}}margin:10% auto{{/if}}">
+            <div class="modal-content">
+                {{> yield "question"}}
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,201 @@
+USERS = [{
+    Name: 'Olen',
+    Age: '18',
+    Gender: 'Male',
+    Body Clock: 'Normal',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Ok',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'China'
+}, {
+    Name: 'Taina',
+    Age: '28',
+    Gender: 'Female',
+    Body Clock: 'Normal',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Eat out',
+    Smoking at home: 'No',
+    Country: 'Japan'
+}, {
+    Name: 'Karina',
+    Age: '27',
+    Gender: 'Female',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'Germany'
+}, {
+    Name: 'Shon',
+    Age: '26',
+    Gender: 'Male',
+    Body Clock: 'Normal',
+    Noise during sleep: 'Normal',
+    Sensitivity to leanliness: 'Ok',
+    Having Meals: 'Eat out',
+    Smoking at home: 'Yes',
+    Country: 'Indonesia'
+}, {
+    Name: 'Lily',
+    Age: '19',
+    Gender: 'Female',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'England'
+}, {
+    Name: 'Elane',
+    Age: '23',
+    Gender: 'Female',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Ok',
+    Having Meals: 'Eat out',
+    Smoking at home: 'No',
+    Country: 'US'
+}, {
+    Name: 'Naomi',
+    Age: '29',
+    Gender: 'Female',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Not very',
+    Having Meals: 'Eat out',
+    Smoking at home: 'Yes',
+    Country: 'US'
+}, {
+    Name: 'Caroll',
+    Age: '21',
+    Gender: 'Female',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Eat out',
+    Smoking at home: 'Yes',
+    Country: 'Indonesia'
+}, {
+    Name: 'Leandro',
+    Age: '21',
+    Gender: 'Male',
+    Body Clock: 'Normal',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'No',
+    Country: 'Italian'
+}, {
+    Name: 'Rey',
+    Age: '19',
+    Gender: 'Male',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Not very',
+    Having Meals: 'Eat out',
+    moking at home: 'No',
+    Country: 'Germany'
+}, {
+    Name: 'Elfreda',
+    Age: '30',
+    Gender: 'Female',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Ok',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'England'
+}, {
+    Name: 'Angelo',
+    Age: '30',
+    Gender: 'Female',
+    Body Clock: 'Normal',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Eat out',
+    Smoking at home: 'No',
+    Country: 'Vietnam'
+}, {
+    Name: 'Adelina',
+    Age: '19',
+    Gender: 'Female',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Eat out',
+    Smoking at home: 'Yes',
+    Country: 'Japan'
+}, {
+    Name: 'Rhett',
+    Age: '23',
+    Gender: 'Male',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'No',
+    Country: 'Indonesia'
+}, {
+    Name: 'April',
+    Age: '22',
+    Gender: 'Female',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Sleeping Log',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'No',
+    Country: 'Spain',
+}, {
+    Name: 'Warren',
+    Age: '29',
+    Gender: 'Male',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'Italian'
+}, {
+    Name: 'Berta',
+    Age: '28',
+    Gender: 'Female',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Ok',
+    Having Meals: 'Eat out',
+    Smoking at home: 'Yes',
+    Country: 'France',
+}, {
+    Name: 'Alia',
+    Age: '29',
+    Gender: 'Female',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Ok',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'Malaysia'
+}, {
+    Name: 'Bobbye',
+    Age: '27',
+    Gender: 'Female',
+    Body Clock: 'Night Owl',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Not very',
+    Having Meals: 'Home cooked',
+    Smoking at home: 'Yes',
+    Country: 'Spain'
+}, {
+    Name: 'Myong',
+    Age: '30',
+    Gender: 'Female',
+    Body Clock: 'Early Bird',
+    Noise during sleep: 'Normal',
+    Sensitivity to Cleanliness: 'Ok',
+    Having Meals: 'Eat out',
+    Smoking at home: 'Yes',
+    Country: 'US'
+}];
