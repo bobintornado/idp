@@ -20,7 +20,8 @@ var mySubmitFunc = function(error, state){
       // ...
       console.log('go to /');
       var url = Router.current().url;
-      console.log('and the url is ' + url);
+      console.log('and the path is ' + url);
+      Session.set('signUp', 'yes');
       Router.go('/');
     }
   }

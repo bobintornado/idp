@@ -8,6 +8,6 @@ Template.landingPage.events({
 
 Template.landingPage.helpers({
     isSignup: function () {
-        return Router.current().url == "/landing/9";
+        return Router.current().url == "/landing/signup";
     }
 });
