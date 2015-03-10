@@ -56,7 +56,7 @@ body {
 }
 #know_more_about_you .modal-dialog {
     position: relative;
-    margin: 20% auto;
+    /*margin: 20% auto;*/
     font-size: large;
 }
 #start_text {
