@@ -2,6 +2,9 @@ Template.question4.events({
     'click .choice_img': function (e) {
         // console.log(e);
         console.log(e.target.id);
+        var trimed = e.target.id.replace(/ /g,'');
+        Session.setPersistent('HavingMeals', trimed);
+        console.log(trimed);
         Router.go('/landing/5');
     }
 });
@@ -19,6 +22,6 @@ var questionList = [{
     src: "/option_icon/Home cook.jpg",
     name: "Home Cook"
 }, {
-    src: "/option_icon/",
+    src: "/option_icon/meals.jpg",
     name: "Both"
 }];

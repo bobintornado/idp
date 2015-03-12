@@ -14,11 +14,23 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="account-ui">
-               
+
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/preference">Preference</a></li>
-                    <li><a href="#">Mail</a></li>
-                    <li><a href="#">User</a></li>
+                    <li>
+                        <a href="">Mail</a>
+                    </li>
+                    <li>
+                        <a href="" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                            User<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Preference</a>
+                            </li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Account Setting</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

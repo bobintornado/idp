@@ -112,7 +112,6 @@ body {
 /* About Search Page*/
 
 #searchbox {
-    position: fixed;
     margin: 0px 8px 8px 8px;
     padding: 8px;
 }
@@ -135,4 +134,59 @@ body {
 .swiper-container {
     width: 100%;
     height: 600px;
+}
+
+.contain_img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#shitfix {
+    margin-left: -19px;
+}
+
+#contactList {
+    height: 100vh;
+    overflow: auto;
+}
+
+.message-from-me {
+    width: 400px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px #aaa;
+    background: #7FFFD4;
+    margin: 0 1rem 1rem;
+    border-radius: 3px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.message-to-me {
+    width: 400px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px #aaa;
+    background: #7FFFD4;
+    margin: 0 1rem 1rem;
+    border-radius: 3px;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.message-icon {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.message_from_me_box {
+    margin-left: auto;
+    width: 450px;
+}
+
+.message_icon_box {
+    display: inline-block;
+}
+
+.message_to_me_box {
+    margin-right: auto;
+    width: 450px;   
 }

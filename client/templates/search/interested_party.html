@@ -1,0 +1,9 @@
+<template name="interested_party">
+    {{#each ppl}}
+    <a href="/users/{{this}}">
+        <div>
+            {{name this}}
+        </div>
+    </a>
+    {{/each}}
+</template>

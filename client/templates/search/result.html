@@ -1,20 +1,23 @@
 <template name="result">
-    <a href="/room/{{_id}}" class="">
-        <div class="card row">
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                image
-            </div>
-            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <address>{{ address }}</address>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    Distance: {{ distance }}
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    Interested: {{ people_interested }}
-                </div>
-            </div>
+    <div class="card row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <img src="http://icons.iconarchive.com/icons/archigraphs/collection/256/House-icon.png" class="contain_img">
         </div>
-    </a>
+        <a href="/room/{{_id}}" class="">
+            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <address>{{ address }}</address>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        Distance: {{ distance }} Meters
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- <div class="row">
+            Interested: {{> interested_party ppl = people_interested}}
+        </div> -->
+    </div>
 </template>

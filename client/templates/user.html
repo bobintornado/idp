@@ -1,0 +1,76 @@
+<template name="user">
+    <div class="container-fluid">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div>
+                <img src="https://cdn0.iconfinder.com/data/icons/business-1/64/user-128.png">
+            </div>
+            <div>
+                <h1>My Profile</h1>
+                <div>
+                    Name: {{profile.Name}}
+                </div>
+                <div>
+                    Gender: {{profile.Gender}}
+                </div>
+                <div>
+                    Age: {{profile.Age}}
+                </div>
+                <div>
+                    Nationality: {{profile.Country}}
+                </div>
+                <div>
+                    Email: {{username}}
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="row">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <h2 id="shitfix">What {{profile.Name}} Matches with You:</h2>
+                    <div>
+                        <b>Body Clock</b>: {{profile.BodyClock}}
+                    </div>
+                    <div>
+                        <b>Noise During Sleep: </b>{{profile.Noiseduringsleep}}
+                    </div>
+                    <div>
+                        <b>Sensitivity to Cleanliness:</b> {{profile.SensitivitytoCleanliness}}
+                    </div>
+                    <div>
+                        <b>Having Meals: </b>{{profile.HavingMeals}}
+                    </div>
+                    <div>
+                        <b>Smoker: </b>{{profile.Smokingathome}}
+                    </div>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    Lifestyle and interests percentage match:
+                    <h1></h1>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage username}}%">
+                        </div>
+                    </div>
+                    <div>
+                        <h1>{{percentage username}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Preferred staying dates for this room:</h2> 2015-3-2 to 2015-10-3
+            </div>
+            <div class="row">
+                <h2>More About {{profile.Name}}</h2>
+                <p>
+                    Hoping to have a pleasant stay with my roommate!
+                </p>
+            </div>
+            <div class="row">
+                <a href="/messages">
+                    <button type="button" class="btn btn-info">
+                        <h1>MESSAGE ME</h1>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>

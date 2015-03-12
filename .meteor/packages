@@ -14,8 +14,5 @@ accounts-base
 swiper:swiper
 accounts-password
 ian:accounts-ui-bootstrap-3
-accounts-github
-accounts-facebook
-accounts-google
 useraccounts:bootstrap
 u2622:persistent-session

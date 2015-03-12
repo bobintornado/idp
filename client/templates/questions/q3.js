@@ -1,7 +1,10 @@
 Template.question3.events({
-    'click .choice_img': function (e) {
+    'click .choice_img': function(e) {
         // console.log(e);
-        console.log(e.target.id);
+        // console.log(e.target.id);
+        var trimed = e.target.id.replace(/ /g, '');
+        Session.setPersistent('Noiseduringsleep', trimed);
+        console.log(trimed);
         Router.go('/landing/4');
     }
 });

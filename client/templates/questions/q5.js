@@ -2,6 +2,9 @@ Template.question5.events({
     'click .choice_img': function (e) {
         // console.log(e);
         console.log(e.target.id);
+        var trimed = e.target.id.replace(/ /g,'');
+        Session.setPersistent('SensitivitytoCleanliness', trimed);
+        console.log(trimed);
         Router.go('/landing/6');
     }
 });
