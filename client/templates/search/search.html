@@ -1,8 +1,14 @@
 <template name="search">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3"> {{> searchBox}} </div>
-            <div class="col-md-9 "> {{> results }} </div>
+            <div class="col-md-3"> {{> searchBox}}
+                <div>
+                    <button type="button" id="search_button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            <div class="col-md-9" id="result">
+                <!-- {{> results }}  -->
+            </div>
         </div>
     </div>
 </template>
