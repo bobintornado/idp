@@ -3,11 +3,14 @@
         <div class="row">
             <div class="col-md-3"> {{> searchBox}}
                 <div>
-                    <button type="button" id="search_button" class="btn btn-primary">Search</button>
+                    <button type="button" id="search_button" class="btn btn-lg btn-info">Search</button>
                 </div>
             </div>
             <div class="col-md-9" id="result">
-                <!-- {{> results }}  -->
+                {{#if searchIsPressed}}
+                    {{> results }}     
+                {{/if}}
+                
             </div>
         </div>
     </div>

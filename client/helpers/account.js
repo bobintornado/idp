@@ -1,13 +1,3 @@
-// Accounts.ui.config({
-//   requestPermissions: {
-//     facebook: ['user_likes'],
-//   },
-//   requestOfflineToken: {
-//     google: true
-//   },
-//   passwordSignupFields: 'USERNAME_AND_OPTIONAL_EMAIL'
-// });
-
 var mySubmitFunc = function(error, state){
   if (!error) {
     if (state === "signIn") {
@@ -18,10 +8,10 @@ var mySubmitFunc = function(error, state){
     if (state === "signUp") {
       // Successfully registered
       // ...
-      console.log('go to /');
-      var url = Router.current().url;
-      console.log('and the path is ' + url);
-      Session.set('signUp', 'yes');
+      // console.log('go to /');
+      // var url = Router.current().url;
+      // console.log('and the path is ' + url);
+      Session.setPersistent("signUp", "Yes");
       Router.go('/');
     }
   }

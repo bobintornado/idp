@@ -1,6 +1,6 @@
 <template name="room">
     <div class="container">
-        <div class="row">
+        <div class="row" style="height: 400px">
             {{> slider photos = photos}}
         </div>
         <div class="row">
@@ -36,7 +36,7 @@
                     <img src="http://gothere.sg/maps/staticmap?sensor=false&size=256x256&zoom=17&center=1.34320680264,103.679646504&markers=1.34320680264,103.679646504,red" style="width: 100%">
                 </div>
                 <div>
-                    Landerlord: Bob
+                    Landlord: Bob
                     <br/> Telephone: 88888888
                 </div>
             </div>
@@ -62,7 +62,8 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                    <button data-dismiss="modal" type="button" class="btn btn-primary" id="putmein">Confirm</button>
+                    
                 </div>
             </div>
         </div>

@@ -17,7 +17,11 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="">Mail</a>
+                        {{#if isSarah}}
+                            <a href="/messages" id="notification-badge">Inbox <span class="badge" id="badge">2</span></a>
+                        {{else}}
+                            <a href="/messages" id="notification-badge">Inbox</a>
+                        {{/if}}
                     </li>
                     <li>
                         <a href="" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">

@@ -19,8 +19,8 @@ var questionList = [{
     src: "/option_icon/Eat out.jpg",
     name: "Eat Out"
 }, {
-    src: "/option_icon/Home cook.jpg",
-    name: "Home Cook"
+    src: "/option_icon/hc.png",
+    name: "Home Cooked"
 }, {
     src: "/option_icon/meals.jpg",
     name: "Both"
