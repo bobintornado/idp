@@ -1,0 +1,29 @@
+<template name="question9">
+    <div class="modal-header">
+        <h4 class="modal-title">Living Styles</h4>
+    </div>
+
+    <div class="modal-body">
+        {{#each questionSets}}
+            <h4>{{name}}</h4>
+            <div class="row btn-group-justified choices_row" role="group">
+                {{#each questions}}
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+                    <div>
+                        <img src="{{src}}" id="{{name}}" data-category="{{../category}}" class="choice_img btn btn-choice">
+                    </div>
+                    <p> {{name}} </p>
+                </div>
+                {{/each}}
+            </div>
+        {{/each}}
+        <hr/>
+        <h4>Anything else?</h4>
+        <input type="text" name="other" id="inputOther" class="form-control" value="" pattern="" title="" placeholder="e.g. allergic to cats">
+        <h3>It's done! Do you want to register and save your preferences?</h3>
+        <div class="row">
+            <button type="button" class="btn btn-default" id="register">Yes! Register & Save!</button>
+            <button type="button" class="btn btn-default" id="skip">No. Later, Later!</button>
+        </div>
+    </div>
+</template>

@@ -109,6 +109,10 @@ body {
     background-color: #00FFFF;
 }
 
+.btn-choice.selected {
+    background-color: #00FFFF;
+}
+
 #modal-2 {
     margin: 8% auto;
 }

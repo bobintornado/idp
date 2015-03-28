@@ -6,10 +6,9 @@ Template.question7.events({
             Session.setPersistent('Smokingathome', 'No');    
         } else {
             Session.setPersistent('Smokingathome', 'Yes');    
-        }
+        };
         console.log(Session.get('Smokingathome'));        
         Router.go('/landing/8');
-
     }
 });
 
