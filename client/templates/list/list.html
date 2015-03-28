@@ -1,0 +1,15 @@
+<template name="list">
+	{{#if hasList}}
+	  You have indicated you interests in....
+	    {{#each userList}}
+		    <div class="card">
+		    	Room: {{room.address}} <br/>
+		    	Move In Date: {{moveInDate}} <br/>
+		        Move Out Date: {{moveOutDate}}
+		    </div>
+	    {{/each}}
+	{{else}}
+	  Ooops, seems that you haven't indicated any interests yet.
+	{{/if}}
+	
+</template>

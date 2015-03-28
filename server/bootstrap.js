@@ -28,4 +28,4 @@ function load_users_data() {
             Accounts.createUser(option);
         };
     };
-}
+};

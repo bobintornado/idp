@@ -4,14 +4,17 @@ body {
     height: 100%;
     width: 100%;
 }
+
 @font-face {
     font-family: BrannbollSmal;
     src: url("/fonts/BrannbollSmal.ttf");
 }
+
 @font-face {
     font-family: JennaSue;
     src: url("/fonts/JennaSue.ttf");
 }
+
 #landing_login {
     position: absolute;
     top: 1%;
@@ -20,12 +23,14 @@ body {
     box-shadow: none;
     color: #FFFFFF;
 }
+
 #langdinglogo {
     position: absolute;
     top: 20%;
     width: 50%;
     left: 25%;
 }
+
 #slogn {
     position: absolute;
     width: 100%;
@@ -35,6 +40,7 @@ body {
     top: 60%;
     text-align: center;
 }
+
 #start {
     position: absolute;
     top: 75%;
@@ -51,46 +57,58 @@ body {
     font-size: xx-large;
     outline: 0;
 }
+
 #start:hover {
     background-color: #228B22;
 }
+
 #know_more_about_you .modal-dialog {
     position: relative;
     /*margin: 20% auto;*/
+    
     font-size: large;
 }
+
 #start_text {
     padding: 0 20px 20px 10px;
     font-size: x-large;
     color: rgb(136, 136, 136);
     font-style: italic;
 }
+
 #OK_button {
     font-size: xx-large;
     outline: 0;
 }
 /* Questions */
+
 .choices_row {
     margin: 0 auto;
 }
+
 .choice {
     height: 170px;
     text-align: center;
 }
+
 .choice div {
     height: 80%;
     margin: 0 auto;
 }
+
 .choice p {
     padding: 10px
 }
+
 .choice_img {
     height: 100%;
     margin: 0 auto;
 }
+
 .btn-choice:hover {
     background-color: #00FFFF;
 }
+
 #modal-2 {
     margin: 8% auto;
 }
@@ -102,6 +120,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 #logo {
     width: 30%;
     height: 100%;
@@ -121,12 +140,6 @@ body {
     padding: 8px;
 }
 
-/*.boundary {
-    background-color: '';
-    width: 5px;
-    height: 20px;
-    display: inline-block;
-}*/
 .card {
     padding: 1.5rem;
     box-shadow: 0 1px 2px #aaa;
@@ -135,20 +148,27 @@ body {
     border-radius: 3px;
 }
 
-/* About Room Page */
-.swiper-container {
-    width: 100%;
-    height: 400px;
+.room_thumbnail {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .contain_img {
     max-height: 100%;
     max-width: 100%;
 }
+/* About Room Page */
 
-#shitfix {
-    margin-left: -19px;
+.slider-container {
+    width: 100%;
+    height: 400px;
 }
+
+.slider-image {
+    height: 400px !important;
+    margin: 0 auto;
+}
+/*About Message Page*/
 
 #contactList {
     height: 100vh;
@@ -193,5 +213,5 @@ body {
 
 .message_to_me_box {
     margin-right: auto;
-    width: 450px;   
+    width: 450px;
 }

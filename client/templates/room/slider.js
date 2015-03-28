@@ -1,7 +1,5 @@
-Template.slider.rendered = function() {
-	var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true
-    });
-};
+Template.slider.helpers({
+	isFirst: function (index) {
+		return index == 0? true: false;
+	}
+});
