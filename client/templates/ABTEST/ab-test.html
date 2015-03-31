@@ -1,0 +1,17 @@
+<template name="ab_test">
+	<div class="container">
+		{{#each tests}}
+			<div class="card row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					{{ab}}	
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					{{start}}
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					{{end}}	
+				</div>
+			</div>
+		{{/each}}	
+	</div>
+</template>

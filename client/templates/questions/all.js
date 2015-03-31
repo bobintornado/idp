@@ -27,6 +27,14 @@ Template.question9.events({
         // console.log(e.target.id);
         Session.setPersistent("preference", "set");
         ABTest.finish("Wizard Style");
+        // End time
+        AB_END_DATE = new Date();
+        // record 
+        Records.insert({
+            ab: AB_CHOICE,
+            start: AB_START_DATE,
+            end: AB_END_DATE
+        });
 
         Router.go('/landing/signup');
     },
