@@ -11,33 +11,33 @@
                 </button>
                 <a class="navbar-brand" href="/">RoomieReady</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="account-ui">
-
                 <ul class="nav navbar-nav navbar-right">
+                    {{#if logined}}
                     <li>
-                        <a href="/list" >List</a>
+                        <a href="#"> Welcome, {{username}}!</a>
+                    </li>
+                    {{/if}}
+                    <li>
+                        <a href="/list">My Interest</a>
                     </li>
                     <li>
                         {{#if isSarah}}
-                            <a href="/messages" id="notification-badge">Messages <span class="badge" id="badge">2</span></a>
-                        {{else}}
-                            <a href="/messages" id="notification-badge">Messages</a>
-                        {{/if}}
+                        <a href="/messages" id="notification-badge">Messages <span class="badge" id="badge">2</span></a> {{else}}
+                        <a href="/messages" id="notification-badge">Messages</a> {{/if}}
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                             User<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
                         </a>
-
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Preference</a>
                             </li>
                             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Account Setting</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

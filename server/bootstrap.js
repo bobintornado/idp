@@ -29,3 +29,9 @@ function load_users_data() {
         };
     };
 };
+
+// Could be improved later with Meteor.call()
+// To make sure validation really works
+Accounts.config({
+    forbidClientAccountCreation : false
+});

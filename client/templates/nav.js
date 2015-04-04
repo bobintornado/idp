@@ -18,8 +18,17 @@ Template.nav.helpers({
                 return false;
             };
         } else {
-        	return false;
+            return false;
         }
-
+    },
+    logined: function () {
+        if (Meteor.user()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    username: function () {
+        return Meteor.user().profile.Name;
     }
 });

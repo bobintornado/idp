@@ -1,15 +1,19 @@
 <template name="search">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3"> {{> searchBox}}
+            <div class="col-md-3">
+                <h3>Where would you like to stay in Singapore?</h3> 
+                {{> searchBox}}
                 <div>
                     <button type="button" id="search_button" class="btn btn-lg btn-info">Search</button>
                 </div>
             </div>
             <div class="col-md-9" id="result">
-                {{#if searchIsPressed}}
-                    {{> results }}     
-                {{/if}}                
+                {{#if searchIsPressed}} 
+                    {{> results }} 
+                {{else}}
+                    <img src="http://www.visakanv.com/blog/wp-content/uploads/2013/05/large-detailed-sg-map.jpg" class="room_thumbnail">
+                {{/if}}
             </div>
         </div>
     </div>

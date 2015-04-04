@@ -13,10 +13,9 @@ react
 accounts-base
 swiper:swiper
 accounts-password
-ian:accounts-ui-bootstrap-3
-useraccounts:bootstrap
 u2622:persistent-session
 mrt:garlic
 msavin:mongol
 richsilv:owl-carousel
 manuel:abtest
+rajit:bootstrap3-datepicker

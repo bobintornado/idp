@@ -8,18 +8,53 @@
         background-size: cover;
     }
     </style>
-
     <img src="/landingLogo.png" id="langdinglogo" />
     <div id="slogn">
         <p>
             Personalize your roommate discovery^
         </p>
     </div>
-
     <div id="modal-2" class="modal" tabindex="-1" role="dialog" style="display: block">
-        <div class="modal-dialog open">
-            <div class="modal-content">
-                {{> atForm state='signUp'}}
+        <div class="modal-dialog">
+            <div class="modal-content modal-sign-up-fix">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="How should we address you? e.g. Jack or Rose">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="How should other contact you? e.g. Jack@rose.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput">Password</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="protect it!">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput2">Confirm the password</label>
+                            <input type="password" class="form-control" id="passwordInput2" placeholder="Double confirm it!">
+                        </div>
+                        <div class="form-group">
+                            <label for="ageInput">Age</label>
+                            <input type="number" class="form-control" id="ageInput" placeholder="e.g. 20">
+                        </div>
+                        <div class="form-group">
+                            <label for="nationalityInput">Nationality</label>
+                            <input type="text" class="form-control" id="nationalityInput" placeholder="e.g. Singapore">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> I agree with the terms and conditions of Roomieready.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success" id="submitSignup">Let's Go!</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

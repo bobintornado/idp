@@ -116,6 +116,10 @@ body {
 #modal-2 {
     margin: 8% auto;
 }
+
+/*.modal-sign-up-fix {
+    padding: 20px;
+}*/
 /*Special fix for long modal scrolling*/
 /* About Search Page */
 
@@ -218,4 +222,10 @@ body {
 .message_to_me_box {
     margin-right: auto;
     width: 450px;
+}
+
+/* About Profile Page */
+.user_profile_icon {
+    width: 40px;
+    height: 40px;
 }

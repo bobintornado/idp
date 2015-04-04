@@ -1,3 +1,13 @@
+Template.room.rendered = function() {
+    // Tooltip
+    $('a').tooltip({
+        show: null
+    });
+    // Date Picker
+    $('#inputMovein').datepicker();
+    $('#inputMoveout').datepicker();
+};
+
 Template.room.helpers({
     percentage: function(email) {
         var matches = session_matach(email);
