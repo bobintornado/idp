@@ -20,6 +20,13 @@ Template.user.helpers({
     			};
     		};
     	};
+    },
+    rooms: function () {
+        // console.log(Rooms.find().fetch());
+        return Rooms.find({}, {limit: 3});
+    },
+    firstPhotoLink: function(photos) {
+        return photos[0]['link'];
     }
 });
 

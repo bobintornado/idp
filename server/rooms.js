@@ -13,7 +13,7 @@ ROOMS = [{
     distance: 120,
     people_interested: ['Shon@gmail.com', 'Sarah@gmail.com'],
     photos: [{
-        link: "http://jeffwerner.ca/images/journal/CRW_5628.jpg"
+        link: "https://singapore.roomies.asia/assets/user/img/room-avatar.png"
     }]
 }, {
     address: "Chinatown (S059725) 3 Havelook Square",
@@ -181,6 +181,6 @@ ROOMS = [{
     distance: 300,
     people_interested: ['Myong@gmail.com', 'Taina@gmail.com', 'Bobbye@gmail.com'],
     photos: [{
-        link: "https://singapore.roomies.asia/assets/user/img/room-avatar.png"
+        link: "http://jeffwerner.ca/images/journal/CRW_5628.jpg"
     }]
 }];

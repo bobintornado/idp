@@ -31,7 +31,7 @@
                         <b>Body Clock</b>: <img src="{{getPictureSrc profile.BodyClock}}" class="user_profile_icon">
                     </div>
                     <div>
-                        <b>Noise During Sleep: </b>  <img src="{{getPictureSrc profile.Noiseduringsleep}}" class="user_profile_icon">
+                        <b>Noise During Sleep: </b> <img src="{{getPictureSrc profile.Noiseduringsleep}}" class="user_profile_icon">
                     </div>
                     <div>
                         <b>Sensitivity to Cleanliness:</b> <img src="{{getPictureSrc profile.SensitivitytoCleanliness}}" class="user_profile_icon">
@@ -72,18 +72,34 @@
                 </p>
             </div>
             <div class="row">
-                <h3>Accommodations {{username}} has also shown interest in:</h3>
-                {{#if hasList}}
-                    {{#each userList}}
-                        <div class="card">
-                            Room: {{room.address}} <br/>
-                            Prefer Move In Date: {{moveInDate}} <br/>
-                            Prefer Move Out Date: {{moveOutDate}}
+                <h3>Accommodations {{profile.Name}} has also shown interest in:</h3> 
+                
+                <div class="table">
+                    <div style="display:table-row">
+                        {{#each rooms}}
+                        <div style="display:table-cell;padding: 10px;">
+                            <a href="/room/{{_id}}">
+                            <img src="{{firstPhotoLink photos}}" style="width:140px;">
+                            </a>
                         </div>
-                    {{/each}}
+                        {{/each}}  
+                    </div>
+                    <div style="display:table-row;">
+                        {{#each rooms}}
+                        <div style="display:table-cell;width:90px;text-align: center;">
+                            <a href="/room/{{_id}}">
+                                <address>{{ address }}</address>
+                            </a>
+                        </div>
+                        {{/each}}  
+                    </div>
+                </div>
+                  
+                
+                <!-- {{#if hasList}}
                 {{else}}
                   Ooops, seems that this user hasn't indicated any interests yet.
-                {{/if}}
+                {{/if}} -->
             </div>
         </div>
     </div>
