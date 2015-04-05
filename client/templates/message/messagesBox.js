@@ -1,10 +1,10 @@
-// var messages_sarach_see = [{
-//     from: 'Jane',
-//     content: 'Hi Sarah!'
-// }, {
-//     from: 'Jane',
-//     content: 'I am Jane, and I am looking for an accommodation in Singapore for my exchange this semester. I saw that you have also expressed interest in this room and we have pretty high lifestyle and interests preference matches! Would you like to consider being roommates?'
-// }];
+var messages_sarach_see = [{
+    from: 'Jane',
+    content: 'Hi!'
+}, {
+    from: 'Jane',
+    content: 'I am Jane, and I am looking for an accommodation in Singapore for my exchange this semester. I saw that you have also expressed interest in this room and we have pretty high lifestyle and interests preference matches! Would you like to consider being roommates?'
+}];
 
 // var messages = [{
 //     from: 'Jane',

@@ -1,8 +1,9 @@
 /* About Landing Page */
-
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+    background-color: #EDEFED;
+    font-family: "Comic Sans MS", cursive, sans-serif
 }
 
 @font-face {
@@ -116,7 +117,6 @@ body {
 #modal-2 {
     margin: 8% auto;
 }
-
 /*.modal-sign-up-fix {
     padding: 20px;
 }*/
@@ -223,9 +223,27 @@ body {
     margin-right: auto;
     width: 450px;
 }
-
 /* About Profile Page */
+
 .user_profile_icon {
     width: 40px;
     height: 40px;
+}
+/* About Nav */
+
+.nav-logo {
+    width: 130px;
+    margin-top: -8px;
+}
+
+/* For List page */
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-item {
+  max-width: 50%;
+  height: 50vh;
 }
