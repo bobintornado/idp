@@ -63,10 +63,25 @@ Template.room.events({
                 'moveOutDate': moveOutDate
             });
             if (id) {
+                // Update here also
+                if (Meteor.users) {
+                    this.people_interested.push(Meteor.user().emails[0].address);
+
+                    Rooms.update({
+                        _id: this._id
+                    }, {
+                        $set: {
+                            'people_interested': this.people_interested
+                        }
+                    });
+                } else {
+                    console.log('user need to login');
+                }
                 toastr.success('Successfully expressed interests and add in list!');
             };
         } else {
-            console.log('user need to login');
+            // console.log('user need to login');
+            toastr.success('Please login first!');
         };
     }
 });
